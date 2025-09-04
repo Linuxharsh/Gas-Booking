@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas-Booking</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Gas-Booking-Form</h1>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="text" id="address" placeholder="Enter your address" required>
+      <select id="gasType" required>
+        <option value="">Select gas type</option>
+        <option value="LPG">LPG</option>
+        <option value="CNG">CNG</option>
+      </select>
+      <input type="date" id="date" required>
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="message"></p>
+    <a href="booking.html">View Bookings</a>
+  </div>
+
+  <script type="module" src="Gas.js"></script>
+</body>
+</html>
